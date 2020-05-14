@@ -27,6 +27,12 @@ protocol RateDataProvider {
 
 final class DataProvider {
     
+    private let session: URLSession
+
+    init(session: URLSession = .shared) {
+        self.session = session
+    }
+    
     // MARK: - Private
     private func url(queryComponents: [URLQueryItem]?, path: String) -> URL? {
         guard var components = URLComponents(string: "http://data.fixer.io") else { return nil }
@@ -39,7 +45,7 @@ final class DataProvider {
     }
     
     private func dataTask<T: Mappable>(url: URL, completionHandler: @escaping (Result<T, DataProviderError>) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        session.dataTask(with: url) { data, response, error in
             DispatchQueue.main.async {
                 if (error != nil) {
                     completionHandler(.failure(DataProviderError.responseData))
