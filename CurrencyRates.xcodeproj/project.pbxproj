@@ -25,6 +25,8 @@
 		B5172BE3245F76DD00A6440C /* CurrenciesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5172BE2245F76DD00A6440C /* CurrenciesPresenterTests.swift */; };
 		B5172BE5245F7E8600A6440C /* CurrenciesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5172BE4245F7E8600A6440C /* CurrenciesViewControllerTests.swift */; };
 		B52EF184246C9186005B0CEE /* ObjDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52EF183246C9186005B0CEE /* ObjDetailTableViewCell.m */; };
+		B52EF188246D55B8005B0CEE /* CurrenciesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52EF187246D55B8005B0CEE /* CurrenciesConfigurator.swift */; };
+		B52EF18A246D578B005B0CEE /* CurrencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52EF189246D578B005B0CEE /* CurrencyConfigurator.swift */; };
 		B58D3B972457292D00220C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D3B962457292D00220C0C /* AppDelegate.swift */; };
 		B58D3B992457292D00220C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D3B982457292D00220C0C /* SceneDelegate.swift */; };
 		B58D3B9E2457292D00220C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58D3B9C2457292D00220C0C /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 		B52EF181246C9186005B0CEE /* CurrencyRates-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CurrencyRates-Bridging-Header.h"; sourceTree = "<group>"; };
 		B52EF182246C9186005B0CEE /* ObjDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjDetailTableViewCell.h; sourceTree = "<group>"; };
 		B52EF183246C9186005B0CEE /* ObjDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjDetailTableViewCell.m; sourceTree = "<group>"; };
+		B52EF187246D55B8005B0CEE /* CurrenciesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesConfigurator.swift; sourceTree = "<group>"; };
+		B52EF189246D578B005B0CEE /* CurrencyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConfigurator.swift; sourceTree = "<group>"; };
 		B58D3B932457292D00220C0C /* CurrencyRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58D3B962457292D00220C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58D3B982457292D00220C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				B5172BB62459A1CB00A6440C /* CurrencyDetailWorker.swift */,
 				B5172BB82459A23800A6440C /* CurrencyDetailPresenter.swift */,
 				B5172BC0245CA92000A6440C /* CurrencyDetailRouter.swift */,
+				B52EF189246D578B005B0CEE /* CurrencyConfigurator.swift */,
 			);
 			path = CurrencyDetail;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				B58D3BBA245776C500220C0C /* CurrenciesWorker.swift */,
 				B58D3BBC24577A5400220C0C /* CurrenciesPresenter.swift */,
 				B5172BBE245C9AEB00A6440C /* CurrenciesRouter.swift */,
+				B52EF187246D55B8005B0CEE /* CurrenciesConfigurator.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				B58D3B992457292D00220C0C /* SceneDelegate.swift in Sources */,
 				B58D3BB02457347D00220C0C /* CurrencySymbols.swift in Sources */,
 				B5172BD1245CBEE300A6440C /* DataProviderError.swift in Sources */,
+				B52EF18A246D578B005B0CEE /* CurrencyConfigurator.swift in Sources */,
 				B52EF184246C9186005B0CEE /* ObjDetailTableViewCell.m in Sources */,
 				B58D3BBB245776C500220C0C /* CurrenciesWorker.swift in Sources */,
 				B5172BAF24599AB000A6440C /* CurrencyDetailModel.swift in Sources */,
@@ -358,6 +365,7 @@
 				B5172BB324599D7200A6440C /* CurrencyDetailViewController.swift in Sources */,
 				B5172BBB2459CEBE00A6440C /* DataProvider.swift in Sources */,
 				B5172BB92459A23800A6440C /* CurrencyDetailPresenter.swift in Sources */,
+				B52EF188246D55B8005B0CEE /* CurrenciesConfigurator.swift in Sources */,
 				B5172BBF245C9AEB00A6440C /* CurrenciesRouter.swift in Sources */,
 				B58D3BBD24577A5400220C0C /* CurrenciesPresenter.swift in Sources */,
 			);

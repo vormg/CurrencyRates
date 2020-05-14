@@ -31,21 +31,7 @@ final class CurrenciesViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
-    }
-    
-    // MARK: - Setup
-    private func setup() {
-        let viewController = self
-        let interactor = CurrenciesInteractor()
-        let presenter = CurrenciesPresenter()
-        let router = CurrenciesRouter()
-        viewController.interactor = interactor
-        viewController.router = router
-        interactor.presenter = presenter
-        presenter.viewController = viewController
-        router.viewController = viewController
-        router.dataStore = interactor
+        CurrenciesConfigurator.configure(viewController: self)
     }
     
     // MARK: - View lifecycle
