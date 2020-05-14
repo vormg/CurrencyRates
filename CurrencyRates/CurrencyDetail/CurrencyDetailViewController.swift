@@ -22,7 +22,7 @@ final class CurrencyDetailViewController: UIViewController {
     
     private(set) lazy var tableView: UITableView = {
         let tableView = UITableView.init(frame: .zero, style: .plain)
-        tableView.register(DetailTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ObjDetailTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView;
@@ -92,7 +92,7 @@ extension CurrencyDetailViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if let cell = cell as? DetailTableViewCell {
+        if let cell = cell as? ObjDetailTableViewCell {
             cell.titleLabel.text = displayDetails[indexPath.row].title
             cell.subTitleLabel.text = displayDetails[indexPath.row].subTitle
         }
